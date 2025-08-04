@@ -1,0 +1,101 @@
+.dashboard-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(191,167,106,0.08), 0 1.5px 8px rgba(0,0,0,0.06);
+  padding: 36px 32px 48px 32px;
+}
+
+.dashboard-section {
+  margin-bottom: 38px;
+  padding-bottom: 18px;
+  border-bottom: 1.5px solid #eee;
+}
+
+.admin-toggle-btn {
+  background: #181818;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 32px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 12px rgba(191,167,106,0.08);
+}
+.admin-toggle-btn:hover {
+  background: #bfa76a;
+  color: #181818;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 18px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(191,167,106,0.07);
+}
+.admin-table th, .admin-table td {
+  padding: 14px 12px;
+  text-align: left;
+}
+.admin-table th {
+  background: #181818;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #bfa76a;
+}
+.admin-table tr:nth-child(even) td {
+  background: #faf8f3;
+}
+.admin-table tr {
+  transition: background 0.18s;
+}
+.admin-table tr:hover td {
+  background: #f5e9c9;
+}
+.admin-btn {
+  background: #bfa76a;
+  color: #181818;
+  border: none;
+  border-radius: 18px;
+  padding: 7px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.admin-btn:hover {
+  background: #181818;
+  color: #fff;
+}
+.admin-btn-danger {
+  background: #e74c3c;
+  color: #fff;
+}
+.admin-btn-danger:hover {
+  background: #c0392b;
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .dashboard-container {
+    padding: 12px 2vw 24px 2vw;
+  }
+  .admin-table th, .admin-table td {
+    padding: 8px 4px;
+    font-size: 0.98rem;
+  }
+  .admin-toggle-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,172 @@
+.checkout-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #faf8f3;
+  border-radius: 18px;
+}
+
+.checkout-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.shipping-form, .payment-and-summary {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 32px rgba(191,167,106,0.08), 0 1.5px 8px rgba(0,0,0,0.06);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment-options h2, .order-summary h2 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.payment-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-tabs button {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.payment-tabs button.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.payment-details h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.qr-code {
+  text-align: center;
+}
+
+.qr-code img {
+  margin-top: 1rem;
+}
+
+.order-summary {
+    margin-top: 2rem;
+}
+
+.summary-items-list {
+  max-height: 300px; /* Or adjust as needed */
+  overflow-y: auto;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.summary-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.summary-item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-item-price {
+  font-weight: 600;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.btn-place-order {
+  display: block;
+  width: 100%;
+  padding: 1.1rem;
+  background: #bfa76a;
+  color: #181818;
+  border: none;
+  border-radius: 22px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 0 2px 12px rgba(191,167,106,0.08);
+  transition: background 0.18s, color 0.18s;
+}
+.btn-place-order:hover {
+  background: #181818;
+  color: #fff;
+}
+
+.order-success {
+  text-align: center;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-success h2 {
+  color: #28a745;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.order-success p {
+  font-size: 1.2rem;
+  color: #555;
+} 

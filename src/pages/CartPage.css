@@ -1,0 +1,127 @@
+.cart-container {
+  padding: 48px 0 64px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cart-container h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #181818;
+  letter-spacing: 1.2px;
+}
+
+.cart-items {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(191,167,106,0.08), 0 1.5px 8px rgba(0,0,0,0.06);
+  padding: 32px 24px 18px 24px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1.5px solid #eee;
+  padding-bottom: 1.5rem;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(191,167,106,0.06);
+  background: #faf8f3;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h2 {
+  margin-top: 0;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #181818;
+  margin-bottom: 0.3rem;
+}
+
+.item-details p {
+  color: #bfa76a;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0.18rem 0;
+}
+
+.btn-remove {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 7px 22px;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.18s, color 0.18s;
+}
+.btn-remove:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+.cart-summary {
+  margin-top: 2.5rem;
+  text-align: right;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(191,167,106,0.06);
+  padding: 28px 24px 18px 24px;
+  display: inline-block;
+  min-width: 320px;
+}
+
+.cart-summary h2 {
+  margin-bottom: 1.2rem;
+  color: #181818;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #bfa76a;
+  color: #181818;
+  border: none;
+  border-radius: 22px;
+  padding: 12px 38px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 12px rgba(191,167,106,0.08);
+}
+.btn-primary:hover {
+  background: #181818;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .cart-items, .cart-summary {
+    padding: 18px 8px 12px 8px;
+  }
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+  .cart-summary {
+    min-width: unset;
+    width: 100%;
+    text-align: center;
+  }
+} 
